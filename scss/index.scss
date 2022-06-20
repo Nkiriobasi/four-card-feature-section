@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+$poppins-font: 'Poppins', sans-serif;
+
+$red-color: hsl(0, 78%, 62%);
+$cyan-color: hsl(180, 62%, 55%); 
+$orange-color: hsl(34, 97%, 64%);
+$blue-color: hsl(212, 86%, 64%);
+$very-dark-blue-color: hsl(234, 12%, 34%);
+$grayish-blue-color: hsl(229, 6%, 66%);
+$very-light-gray-color: hsl(0, 0%, 98%);
+$white-color: #fff;
+$background-color: #202A44;
+$paragraph-color: #92969c; 
+
+$media-desktop: "only screen and (max-width : 1097px)";
+$media-mobile: "only screen and (max-width : 600px)";
+$media-mobile-sm: "only screen and (max-width : 425px)";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: $background-color;
+    width: 100%;
+    height: 100vh;
+    padding: 0 1rem;
+
+    @media #{$media-desktop} {
+        height: 100%;
+    }
+
+    .container{
+        max-width: 1092px;
+        margin: 0 auto;
+        width: inherit;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .component{
+            width: 90%;
+            height: auto;
+            background: $very-light-gray-color;
+
+            .component__content{
+                width: 100%;
+                height: inherit;
+                padding: 2rem 4rem;
+                text-align: center;
+                font-family: $poppins-font;
+
+                @media #{$media-mobile} {
+                    padding: 2rem;
+                } 
+
+                @media #{$media-mobile-sm} {
+                    padding: 1rem;
+                }  
+
+                .thin-heading{
+                    width: inherit;
+                    height: 30px;
+                    font-weight: 200;
+                    font-size: 1.5rem;
+                    line-height: 1.2;
+                    margin-bottom: 0.5rem;
+                    color: $paragraph-color;
+
+                    @media #{$media-mobile} {
+                        height: 22px;
+                        font-size: 1rem;
+                    }  
+                }
+                
+                .bold-heading{
+                    width: inherit;
+                    height: 30px;
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    line-height: 1.2;
+                    margin-bottom: 0.875rem;
+                    color: initial;
+
+                    @media #{$media-mobile} {
+                        height: 22px;
+                        font-size: 1rem;
+                    } 
+                }
+                
+                .p-text{
+                    width: inherit;
+                    height: auto;
+                    font-weight: 400;
+                    font-size: 0.875rem;
+                    line-height: 1.3;
+                    margin-bottom: 4rem;
+                    color: $paragraph-color;
+
+                    @media #{$media-mobile} {
+                        font-size: 0.625rem;
+                    } 
+                }
+
+
+                .flex__container{
+                    width: 100%;
+                    height: inherit;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+
+                    .flex-item{
+                        width: 266px;
+                        height: auto;
+                        border-radius: 5px;
+                        background: $white-color;
+                        box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.2);
+
+                        .flex-item__content{
+                            width: 100%;
+                            height: inherit;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            padding: 1rem;
+
+                            .bold-text{
+                                font-size: 14px;
+                                margin-bottom: 0.5rem;
+                            }
+
+                            .h4{
+                                max-width: 200px;
+                                font-size: 10px;
+                                margin-bottom: 1rem;
+                                text-align: left;
+                                color: $paragraph-color;
+                            }
+
+                            .icon-container{
+                                width: 100%;
+                                height: 35px;
+                                text-align: right;
+                            }
+
+                            img{
+                                width: 35px;
+                                height: inherit;
+                            }
+                        }
+                    }
+
+                    .center-box__container{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                    }
+
+                    
+                    @media #{$media-desktop} {
+                        flex-direction: column;
+                    }
+                }
+
+
+                .flex__container:first-child{
+                    border-top: 1px solid green;
+                }
+            }
+        }
+    }
+    
+}
+
