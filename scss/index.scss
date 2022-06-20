@@ -169,6 +169,23 @@ body{
                     @media #{$media-desktop} {
                         flex-direction: column;
                     }
+
+
+                    .flex-cyan{
+                        border-top: 3px solid $cyan-color;
+                    }
+
+                    .flex-red{
+                        border-top: 3px solid $red-color;
+                    }
+
+                    .flex-orange{
+                        border-top: 3px solid $orange-color;
+                    }
+
+                    .flex-blue{
+                        border-top: 3px solid $blue-color;
+                    }
                 }
 
 

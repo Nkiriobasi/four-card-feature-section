@@ -146,6 +146,18 @@ body .container .component .component__content .flex__container .center-box__con
     flex-direction: column;
   }
 }
+body .container .component .component__content .flex__container .flex-cyan {
+  border-top: 3px solid hsl(180deg, 62%, 55%);
+}
+body .container .component .component__content .flex__container .flex-red {
+  border-top: 3px solid hsl(0deg, 78%, 62%);
+}
+body .container .component .component__content .flex__container .flex-orange {
+  border-top: 3px solid hsl(34deg, 97%, 64%);
+}
+body .container .component .component__content .flex__container .flex-blue {
+  border-top: 3px solid hsl(212deg, 86%, 64%);
+}
 body .container .component .component__content .flex__container:first-child {
   border-top: 1px solid green;
 }/*# sourceMappingURL=index.css.map */
